@@ -1,0 +1,30 @@
+.box {
+    width: 100%;
+    height: 100%;
+    border-top:  5px;;
+    background: hsl(53, 72%, 73%);
+
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    border-top:  5px;;
+    background: hsl(53, 72%, 73%);
+
+} /*non riesco a capire come mettere lo sfondo giallo a tutta la pagina, è un problrma di div?*/
+
+#redtitle {
+    color: red;
+}
+
+
+
+
+.centrale {
+    margin-inline: auto;
+}
+
+
+/*non sono riuscita: a fare gialla tutta la pagina, a centrare il tutto nonostante il comando,
+cambiare l'anteprima del video con immagine della focaccia*/
