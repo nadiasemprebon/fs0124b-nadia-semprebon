@@ -1,0 +1,44 @@
+body{
+    background-image:url(../img/sfondo.png) ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+    font-family: 'Poppins', sans-serif;
+}
+
+#box{
+    background-color:#008cae;
+    margin: 15px;
+    text-align: center;
+    color:white
+    
+}
+
+.box2{
+    background-color: white;
+    margin: 15px;
+    text-align: center;
+    color: black}
+
+#grey-text{
+    color: rgba(128, 128, 128, 0.884);
+    }
+
+mark{
+    background-color: #e1dfe0;
+    border-radius: 5px;
+    border: 1px solid #bfbebf
+}
+
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
