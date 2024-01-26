@@ -1,1 +1,59 @@
-/* Your styles here */
+body{
+    color: #393d41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+    background-image: url(../img/banner.jpg);
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.article-title{ 
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+}
+.title-h2{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+#title-h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+
+}
+
+#header{
+    width: 100%;
+    margin-bottom: 0x;
+    padding: 30px;
+    background-color: black;
+}
+
+#background{
+
+}
+
+#logoepicode{
+    width: 400px;
+    margin-bottom: 0x;
+    padding: 100px;
+}
+
+footer, .footer-link
+{
+    color:#c8e7f0 ;
+    background-color: #25a2c3 ;
+}
+
+h2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+
+}
