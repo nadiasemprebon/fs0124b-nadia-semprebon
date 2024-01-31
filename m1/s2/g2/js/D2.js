@@ -1,20 +1,29 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-{
+
   let array = [1, 2, 3, 4];
   let m = Math.max(...array);
   console.log(m);
-}
+
+
+  let x= 5;
+  let y=37;
+  if (x < y) || (y > x)
+    console.log(piu grande);
+  else if{
+    cosole.log(più piccolo)
+  }
+  
 /* ESERCIZIO 2
 
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 {
   let numero = 7;
-  if (numero != 5) {
+  if (numero !== 5) {
     console.log("not equal");
-  }
+  } 
 }
 
 /* ESERCIZIO 3
@@ -22,8 +31,8 @@
 */
 {
   let numero = 20;
-  let risultato = numero % 5;
-  if (risultato / 5) {
+  let risultato = (numero %5);
+  if (risultato==0) {
     console.log("divisibile per 5");
   }
 }
