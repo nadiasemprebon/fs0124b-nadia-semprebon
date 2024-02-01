@@ -50,10 +50,11 @@ console.log(crazyDiff(4));
 */
 
 function boundary(n) {
-  return 20 > n <= 100;
+  20 > n <= 100;
+  return true;
 }
-const n = 200;
-console.log(boundary());
+const n = 400;
+console.log(boundary(400));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
