@@ -39,8 +39,8 @@ function crazyDiff(m) {
     return m - 19;
   }
 }
-const m = 5;
-console.log(crazyDiff(4));
+
+console.log(crazyDiff());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
