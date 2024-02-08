@@ -1,4 +1,4 @@
-const insert = document.getElementsByClassName("insert");
+const testo = document.getElementsByClassName("Elimina");
 insert.addEventListener(
   "click",
   function (e) {
@@ -6,7 +6,3 @@ insert.addEventListener(
   },
   function () {}
 );
-
-const toDo = document.createElement("div");
-toDo.innerText = "This is a paragraph";
-document.body.appendChild(toDo);
