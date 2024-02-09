@@ -163,19 +163,30 @@ whatDayIsIt();*/
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
-
+//function deleteProp(obj, string){
+//  if obj.string !== undefined
+//  return obj
+//}
+//deleteProp()
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
-*/
 
+function newestMovie() {}*/
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
-*/
 
+function countMovies() {
+  return movies.length;
+}*/
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
-*/
 
+function onlyTheYears() {
+  let yearsArray = movies.map(function (movie) {
+    return new Date(movie.releaseDate).getFullYear();
+  });
+}*/
+//usa map!!!!!
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
@@ -202,10 +213,16 @@ whatDayIsIt();*/
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+//function SelectElementIdContainer(){
+//  let container = document.getElementById('container')
 
+//}
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+//function SelectEveryTagTd (){
+//  let td = document.getElementsByTagName('td');
+//}
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
@@ -217,16 +234,26 @@ whatDayIsIt();*/
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
-*/
 
+*/
+/*function AddElement(){
+  
+  let newListItem = document.createElement('li');
+let  newListItem.textContent = newItemText;
+ let myList = document.getElementById('myList');
+myList.appendChild(newListItem);
+  }
+*/
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
-*/
 
+
+function emptyList(){}
+qui serve usare innertext*/
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-
+//USA FOR EACH
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
