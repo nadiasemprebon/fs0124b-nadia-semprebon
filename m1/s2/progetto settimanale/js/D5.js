@@ -68,7 +68,9 @@ cars.push({ licencePlate });
 for (let i = 0; i < cars.length; i++) {
   console.log(cars[i] + [licencePlate]);
 }
-console.log([cars]); //non capisco come inseriremlicencePlate in ogni elemento, per ora è solo stato creato
+console.log([cars]);
+
+//non capisco come inseriremlicencePlate in ogni elemento, per ora è solo stato creato
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
