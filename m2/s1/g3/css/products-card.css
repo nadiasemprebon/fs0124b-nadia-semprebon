@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  background-color: #fef7e2;
+  border-radius: 15%;
+}
+.text1 {
+  color: #714032;
+}
+
+.text2 {
+  color: #714032;
+}
+
+.text3 {
+  color: #714032;
+}
+
+.btn {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  background-color: #ffdf7f;
+  border-radius: 10px;
+  color: #714032;
+  text-decoration: none;
+}
+.img1 {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
