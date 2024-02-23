@@ -1,10 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 .navbar {
   background-color: #ffc017;
-
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -35,17 +30,21 @@
 .main-container {
   background-color: #ffc017;
   display: flex;
+  flex-direction: column;
 }
 
 .m {
+  align-self: flex-end;
   border-bottom: 1px solid black;
   padding-top: -50px;
 }
 
 #big {
+  flex-direction: column;
   font-size: 100px;
 }
 
 .text {
+  flex-direction: column;
   font-size: 25px;
 }
