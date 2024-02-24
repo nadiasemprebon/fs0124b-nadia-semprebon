@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   background-color: #ffc017;
   display: flex;
@@ -55,6 +59,7 @@
 }
 
 #big {
+  font-family: "Spectral", serif;
   font-size: 100px;
 }
 
