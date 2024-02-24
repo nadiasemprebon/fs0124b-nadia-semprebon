@@ -30,25 +30,28 @@
 .main-container {
   background-color: #ffc017;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 25px;
-  height: 460px;
   border-bottom: 1px solid black;
 }
 
-.m {
-  position: relative;
-  top: -240px;
-  left: 860px;
-
-  padding-top: -50px;
+.tre-elementi {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 5% 0 0 10%;
 }
+
 #black-btn-link {
   background-color: black;
   color: white;
   padding: 10px 40px 10px 40px;
   text-decoration: none;
   border-radius: 20px;
+}
+
+.black-btn {
+  padding-top: 25px;
 }
 
 #big {
@@ -59,9 +62,7 @@
   font-size: 25px;
 }
 
-#black-btn-link {
-  background-color: black;
-  color: white;
-  padding: 10px 20px 10px 0;
-  text-decoration: none;
+.img-container {
+  display: flex;
+  flex-direction: row-reverse;
 }
