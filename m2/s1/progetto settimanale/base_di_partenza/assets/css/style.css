@@ -31,10 +31,16 @@
   background-color: #ffc017;
   display: flex;
   flex-direction: column;
+  gap: 25px;
+  height: 460px;
+  border-bottom: 1px solid black;
 }
 
 .m {
-  border-bottom: 1px solid black;
+  position: relative;
+  top: -240px;
+  left: 860px;
+
   padding-top: -50px;
 }
 #black-btn-link {
@@ -52,6 +58,7 @@
 .text {
   font-size: 25px;
 }
+
 #black-btn-link {
   background-color: black;
   color: white;
