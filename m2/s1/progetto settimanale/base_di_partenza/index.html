@@ -8,12 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -45,292 +51,414 @@
     </header>
     <main>
       <div class="main-container">
-        <div class ="tre-elementi">
-        <div class="big">
-          <p id="big">Stay curious.</p> 
+        <div class="tre-elementi">
+          <div class="big">
+            <p id="big">Stay curious.</p>
+          </div>
+          <div id="text">
+            <p class="text">Discover stories,thinking, and expertise</p>
+
+            <p class="text">from writers on any topic</p>
+          </div>
+
+          <div class="black-btn">
+            <a href="#" id="black-btn-link">Start reading</a>
+          </div>
         </div>
-        <div id="text">
-          <p class="text">Discover stories,thinking, and expertise</p>
-       
-         <p class="text">from writers on any topic</p>
-           </div>
-        
-        <div class="black-btn">
-          <a href="#" id="black-btn-link">Start reading</a>
+
+        <div class="img-container">
+          <div class="m">
+            <img src="./assets/imgs/svg/m.svg" alt="m" id="m" />
+          </div>
         </div>
-      </div>
-      
-      <div class="img-container">
-        <div class="m">
-          <img src="./assets/imgs/svg/m.svg" alt="m" id="m"/>
-        </div>
-      </div>
       </div>
     </main>
-<!--COMMENTO-- PROTOTIPO FLEX PRIMO ARTICOLO-->
-    <div class="article-container">
-      <div class="first-article">
-        <div class="trending">
-      <div class="small-img">
-        <img src="./assets/imgs/svg/trending.svg" />
-      </div>
-       <div class="first-p">
-         <p>TRENDING ON MEDIUM</p>
-       </div>
-      </div>
-    </div>
-
-<!--FINE TITOLETTO-->
-
-    <div class="tom"> 
-        <div>
-          <p class =number>01</p>
-        </div>
-
-
-        <!--CONTAINER DA METTERE IN COLONNA-->
-
-
-        <div class="container-column">
-         
-            <div class="round-img"> 
-              <div>                     <!--NON FUNZIONA IL BORDER-RADIUS IN CSS-->
-              <img src="./assets/imgs/image01.jpeg" />
-            </div>
-       <div >
-         <h4>Tom Cooper</h4>
-      </div>
-    </div>
-           
-       <div>
-         <p>ukraine War, 23 October 2022</p>
-        </div>
-        <div>
-           <p>Oct 23 - 5 min read</p>
+    <div class="first-container">
+      <!--CONTIENE TUTTA LA PAGINA DA GIALLO IN POI-->
+      <div class="second-container-with-flex">
+        <!--CONTIENE TUTTA LA PAG DOPO IL GIALLO E METTE GRIGLIA E DUE COLONNE IN FLEX CON FOOTER E ALTRI ARTICLES-->
+        <div class="third-container-with-flex">
+          <!--CONTIENE TUTTA LA GRIGLIA DI ARTICOLI E METTE IN FLEX CON IL TITOLO TRENDING-->
+          <div class="fourth-container-trending-with-flex">
+            <!--CONTIENE LA FRECCIA E IL TITOLO E HA FLEX-->
+            <img src="./assets/imgs/svg/trending.svg" />
+            <h2>TRENDING ON MEDIUM</h2>
           </div>
-    
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>01</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image01.jpeg" class="round.img" />
+                  <h4>Tom Cooper</h4>
+                </div>
+                <div class="title-first-article">
+                  <h4>Ukraine War, 23 October 2022</h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 23 &#183; 5 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO n.2-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>02</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image02.png" class="round.img" />
+                  <h4>Arthur Hayes in Entrepreneur's Handbook</h4>
+                  <!--DOVREBBE ESSERCI UNA A-->
+                </div>
+                <div class="title-first-article">
+                  <h4>Comeback</h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 26 &#183; 24 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO n.3-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>03</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image03.jpeg" class="round.img" />
+                  <h4>Erin A Ross in Slackjaw</h4>
+                </div>
+                <div class="title-first-article">
+                  <h4>
+                    How I Learned to Love My Breasts Even Though One Is A
+                    Horcrux For Voldemort
+                  </h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 26 &#183; 2 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>04</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image04.png" class="round.img" />
+                  <h4>Tom Cooper</h4>
+                </div>
+                <div class="title-first-article">
+                  <h4>
+                    The Night Paul McCartney DOnned a Disguise at Fillmore East
+                  </h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 22 &#183; 3 min read</p>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO n.5-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>05</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image05.jpeg" class="round.img" />
+                  <h4>Frank Andrade in Towards Date Science</h4>
+                </div>
+                <div class="title-first-article">
+                  <h4>
+                    5 Python Projets to Automate Your Life: From Beginner to
+                    Advanced
+                  </h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 13 &#183; 6 min read</p>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fifth-container-article">
+            <!--CONTIENE IL SINGOLO ARTICOLO n.6-->
+            <div class="sixth-container-single-artcle-with-flex">
+              <!--CONTIENE IL SINGOLO ART E METTE IN FLEX N. E COLONNA-->
+              <div class="number">
+                <span>06</span>
+              </div>
+              <div class="seventh-container-column-single-article-with-flex">
+                <div class="eighth-container-flex-img-author">
+                  <img src="./assets/imgs/image06.png" class="round.img" />
+                  <h4>Wisley Smith in JavaScript in Plain English</h4>
+                </div>
+                <div class="title-first-article">
+                  <h4>How to Make Visual Studio Code Look Amazing</h4>
+                </div>
+                <div class="date-time">
+                  <p>Oct 20 &#183; 7 min read</p>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--PARTE CON GLI ALTRI ARTICOLI-->
+
+        <div class="container-articles-aside-footer">
+          <!--CONTIENE IN FLEX TUTTI LE TRE PARTI SOTTOSTANTI ALLA GRIGLIA-->
+          <div class="articles-pictures-parent">
+            <!--CONTIENE GLI ARTICOLI E LE IMMAGINE IN COLONNA ACCOSTATE DEVE AVERE FLEX-->
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!--SECONDO ARTICOLO IN COLONNA-->
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-how-old-is-old">
+              <!--CONTIENE TUTTI GLI ARTICOLI E DEVE AVERE FLEX- COLUMN-->
+              <div class="first-article-column">
+                <!--SINGOLO ARTICOLO E DEVE AVERE FLEX-->
+                <img src="./assets/imgs/image07.jpeg" />
+                <span>
+                  <p>Robert Roy Britt</p>
+                </span>
+                <div>
+                  <h4>How Old Is Old?</h4>
+                </div>
+                <div>
+                  <p>
+                    What we considerer "old" changes dramatically with age, and
+                    our perspectives can be predictive of how well we age
+                  </p>
+                </div>
+                <div class="date-time">
+                  <p>Oct27 &#183; 6 min read &#183;</p>
+                  <span>
+                    <a href="#">Aging</a>
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/star.svg" />
+                  </span>
+                  <span>
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-       
-
-
-
-      <article></div>
-     
-        <p class="number">02</p>
-        <img src="./assets/imgs/image02.png" />
-        <h4>Arthur Hayes in Entrepreneur's Handbook</h4>
-        <p>Comeback</p>
-        <p>Oct 26·24 min read</p>
-      </article>
-      <article>
-        <p class="number">03</p>
-        <img src="./assets/imgs/image03.jpeg" />
-        <h4>Tom Cooper</h4>
-        <p>
-          How I Learned to Love My Breasts Even Though One Is A Horcrux For
-          Voldemort
-        </p>
-        <p>Oct 26·2 min read</p>
-      </article>
-      <article>
-        <p class="number">04</p>
-        <img src="./assets/imgs/image04.png" />
-        <h4>Frank Mastropolo in The Riffk</h4>
-        <p>The Night Paul McCartney Donned a Disguise at Fillmore East</p>
-        <p>Oct 22·3 min read</p>
-        <img src="./assets/imgs/svg/star.svg" />
-      </article>
-      <article>
-        <p class="number">05</p>
-        <img src="./assets/imgs/image05.jpeg" />
-        <h4>Frank Andrade in Towards Data Science</h4>
-        <p>Python Projects to Automate Your Life: From Beginner to Advanced</p>
-        <p>Oct 13·6 min read</p>
-        <img src="./assets/imgs/svg/star.svg" />
-      </article>
-     <article>
-         <p class="number">06</p>
-        <img src="./assets/imgs/image06.png" />
-        <h4>Wesley Smits in JavaScript in Plain English</h4>
-        <p>How To Make Visual Studio Code Look Amazing
-</p>
-        <p>ct 20·7 min read</p>
-        <img src="./assets/imgs/svg/star.svg"></p>
-        
-      </article>
-       <article>
-         
-        <img src="./assets/imgs/image07.jpeg" />
-        <h4>Robert Roy Britt</h4>
-        <p>How Old is Old?</p>
-        <p>What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-        <p>Oct 27 · 5 min read · Aging </p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg">
-                <img src="./assets/imgs/image08.jpeg" />
-
-
-      </article>
-      <article>
-         
-      <img src="./assets/imgs/image09.jpeg"/>
-        <h4>Taru Anniina Liikanen</h4>
-        <p>Is Taylor Swift Allowed to Speak About Fat?</p>
-        <p>Can you speak about your trauma if you don't look traumatized?</p>
-        <p>Oct 24 · 6 min read · Health</p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image10.jpeg"/>
-      </article>
-
-
-
-
-
-
-
-       <article>
-         
-      <img src="./assets/imgs/image11.jpeg"/>
-        <h4>David Rodenas, Ph. D.</h4>
-        <p>Don’t Screw Up, You Will Be Found Guilty
-</p>
-        <p>Software Engineer, yours is the right to produce high-quality work at all times, also the liability.
-</p>
-        <p>Oct 15 · 5 min read · Software Engineering 
-</p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image12.png"/>
-
-      </article>
-
-       <article>
-         
-      <img src="./assets/imgs/image13.png"/>
-        <h4>Microsoft Design</h4>
-        <p>Leave No Trace</p>
-        <p>How product designers can break from the status quo and help our planet</p>
-        <p>Oct 25 · 11 min read · Sustainability</p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image14.png"/>
-        
-
-      </article>
-
-<article>
-                   
-      <img src="./assets/imgs/image15.png"/>
-        <h4>Scott H. Young</h4>
-        <p>Variability, Not Repetition, is the Key to Mastery</p>
-        <p>Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the man who has practiced one kick 10,000...
-</p>
-        <p>Oct 26 · 7 min read · Health 
-</p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image16.jpg"/>
-        
-
-      </article>
-
-
-      <article>
-                   
-      <img src="./assets/imgs/image17.png"/>
-        <h4>Paul A. DeStefanoin Human Parts</h4>
-        <p>What I Overheard as an Escape Room Actor</p>
-        <p>Lock a group of people in a room and you’ll witness some surprising confessions</p>
-
-        <p>Jan 18, 2020 · 6 min read · Experiences </p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image18.jpeg"/>
-        
-
-      </article>
-
-      <article>
-                   
-      <img src="./assets/imgs/image19.jpeg"/>
-        <h4>Kim Scott
-</h4>
-        <p>6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”
-</p>
-        <p>With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…
-</p>
-
-        <p>Oct 24 · 6 min read · Health 
-</p> 
-        <img src="./assets/imgs/svg/star.svg" />
-        <img src="./assets/imgs/svg/bookmark.svg"/>
-        <img src="./assets/imgs/image20.jpg"/>
-        </article>
-
-
-
     </div>
-    <aside>
-    <div class="aside-container">
-      <div>
-        <a href="#">Programming</a>
-      </div>
-       <div>
-        <a href="#">Data Science</a>
-      </div>
- <div>
-        <a href="#">Technology</a>
- </div>
- <div>
-        <a href="#">Self Improvement</a>
-      </div>
- <div>
-        <a href="#">Writing</a>
-      </div>
- <div>
-        <a href="#">Relationships</a>
-      </div>
- <div>
-        <a href="#">Machine Learning</a>
-      </div>
- <div>
-        <a href="#">Productivity</a>
-      </div>
- <div>
-        <a href="#">Politics</a>
-      </div>
-
-<div class="footer">
-<div class =footer-element>
-  <a href="#">Help</a>
-</div>
-<div class =footer-element>
-  <a href="#">Status</a>
-</div>
-<div class =footer-element>
-  <a href="#">Writers</a>
-</div>
-<div class =footer-element>
-  <a href="#">Blog</a>
-</div>
-<div class =footer-element>
-  <a href="#">Careers</a>
-</div>
-<div class =footer-element>
-  <a href="#">Privacy</a>
-</div>
-<div class =footer-element>
-  <a href="#">Terms</a>
-</div>
-<div class =footer-element>
-  <a href="#">About</a>
-</div>
-<div class =footer-element>
-  <a href="#">Knowable</a>
-</div>
-
-
-    </div></aside>
   </body>
 </html>

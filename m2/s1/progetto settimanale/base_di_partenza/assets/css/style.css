@@ -77,28 +77,3 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-
-.trending {
-  display: flex;
-}
-
-.first-p {
-  padding: 10px;
-  font-size: 0.8em;
-  font-weight: 700;
-}
-
-/*NON FUNZIONA BORDER-RADIUS DELL'IMMAGINE
-#img-tom {
-  border-radius: 50px;
-}
-*/
-.number {
-  color: #f2f2f2;
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.round-img {
-  height: 100px; //non funziona
-}
