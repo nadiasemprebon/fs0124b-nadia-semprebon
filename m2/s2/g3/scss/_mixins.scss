@@ -1,5 +1,18 @@
 @mixin title-big {
   color: #2f075d;
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 50px;
+}
+
+@mixin flex-nav {
+  display: flex;
+  font-size: 12px;
+  color: testo;
+}
+
+@mixin btn {
+  display: inline-block;
+  margin: 3px;
+  padding: $padding-default;
+  border-radius: 5px;
 }
