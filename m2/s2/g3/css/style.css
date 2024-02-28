@@ -133,4 +133,10 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  color: #2f075d;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
 /*# sourceMappingURL=style.css.map */

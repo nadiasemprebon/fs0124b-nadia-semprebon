@@ -5,3 +5,7 @@
 @import "bottoni";
 @import "mixins";
 @import "animazioni";
+
+h1 {
+  @include title-big;
+}
