@@ -19,4 +19,15 @@ footer {
   padding-top: 150px;
   padding-left: 200px;
   padding-right: 200px;
+  color: map-get($colori, text_footer);
+}
+.gray {
+  color: map-get($colori, text_footer);
+}
+
+bg_gray {
+  background-color: map-get(
+    $colori,
+    text_footer
+  ); //non funziona, controllare!!!!!!!!
 }

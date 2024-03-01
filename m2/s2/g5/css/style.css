@@ -11861,6 +11861,15 @@ footer {
   padding-top: 150px;
   padding-left: 200px;
   padding-right: 200px;
+  color: #7e7e7e;
+}
+
+.gray {
+  color: #7e7e7e;
+}
+
+bg_gray {
+  background-color: #7e7e7e;
 }
 
 /*# sourceMappingURL=style.css.map */
