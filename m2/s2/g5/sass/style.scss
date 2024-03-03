@@ -55,3 +55,8 @@ footer {
   height: 70px;
   display: contents;
 }
+.click,
+button:active {
+  background-color: #ffbf00;
+  color: black;
+}
