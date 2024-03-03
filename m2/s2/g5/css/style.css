@@ -11898,4 +11898,14 @@ footer {
   color: #6b6b6b;
 }
 
+.prova {
+  width: 70px;
+  height: 70px;
+  display: contents;
+}
+
+.exp {
+  display: ruby-text;
+}
+
 /*# sourceMappingURL=style.css.map */
