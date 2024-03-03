@@ -25,9 +25,22 @@ footer {
   color: map-get($colori, text_footer);
 }
 
-bg_gray {
-  background-color: map-get(
-    $colori,
-    text_footer
-  ); //non funziona, controllare!!!!!!!!
+.margin {
+  margin-left: 30px;
+}
+.img_margin {
+  padding-right: inherit;
+}
+
+.color {
+  background-color: #313331;
+  color: #f5f5e5;
+}
+.edit {
+  color: #6b6b6b;
+  background-color: black;
+}
+
+.form {
+  background-color: #666666;
 }
