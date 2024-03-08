@@ -37,3 +37,19 @@ function generaClone() {
 
   return clone;
 }
+
+function redirectToPage(event) {
+  // Impedisce il comportamento predefinito del link (aprire una nuova pagina)
+  event.preventDefault();
+
+  // Specifica il percorso della pagina di destinazione
+  var destinationPage = "http://127.0.0.1:5500/addProduct.html";
+
+  // Reindirizza l'utente alla pagina di destinazione
+  window.location.href = destinationPage;
+}
+
+// Aggiungi un gestore di eventi al click del link
+document
+  .getElementById("linkToRedirect")
+  .addEventListener("click", redirectToPage);
