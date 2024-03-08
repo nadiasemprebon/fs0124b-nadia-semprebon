@@ -27,19 +27,6 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       price.innerText = prodotto.price;
       editBtn.href = `edit.html?id=${prodotto.id}`; //.ID è GIUSTO? NON NE SONO SICURA
       infoBtn.href = `edit.html?id=${prodotto.id}`; // .ID è GIUSTO?? NON NE SONO
-
-      //chat gpt
-      function redirectToEditPage() {
-        // Reindirizza l'utente alla pagina di modifica
-        window.location.href = "pagina_edit.html";
-      }
-
-      // Aggiungi un gestore di eventi al click del pulsante "Edit"
-      document
-        .getElementById("editButton")
-        .addEventListener("click", redirectToEditPage);
-
-      //fine chatgpt
     }
   });
 
