@@ -14,13 +14,13 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
 
       let imgUrl = riga.querySelector(".imgUrl");
       let name = riga.querySelector(".name");
-      let brand = riga.querySelector(".prezzo");
+      let brand = riga.querySelector(".brand");
       let description = riga.querySelector(".description");
       let price = riga.querySelector(".price");
       let editBtn = riga.querySelector(".edit");
       let infoBtn = riga.querySelector(".info");
 
-      imgUrl.innerText = prodotto.imgUrl;
+      imgUrl.innerText = prodotto.imageUrl; /// serve qualcosa d'altro
       name.innerText = prodotto.name;
       brand.innerText = prodotto.brand;
       description.innerText = prodotto.description;
@@ -38,18 +38,16 @@ function generaClone() {
   return clone;
 }
 
-function redirectToPage(event) {
-  // Impedisce il comportamento predefinito del link (aprire una nuova pagina)
-  event.preventDefault();
-
-  // Specifica il percorso della pagina di destinazione
-  var destinationPage = "http://127.0.0.1:5500/addProduct.html";
-
-  // Reindirizza l'utente alla pagina di destinazione
-  window.location.href = destinationPage;
-}
-
-// Aggiungi un gestore di eventi al click del link
-document
-  .getElementById("linkToRedirect")
-  .addEventListener("click", redirectToPage);
+//fetch per inserire immagine in cards
+fetch(
+  "https://images-na.ssl-images-amazon.com/images/I/81Na4DGpthL._AC_SL1500_.jpg"
+)
+  .then((response) => {
+    return response.blob();
+  })
+  .then((myBlob) => {
+    let objectURL = URL.createObjectURL(myBlob);
+    let image = document.createElement("img");
+    img.src = objectURL;
+    document.body.appendChild(image);
+  });
