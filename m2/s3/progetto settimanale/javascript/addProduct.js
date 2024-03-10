@@ -32,8 +32,7 @@ salva.addEventListener("click", function (e) {
       console.log(res);
       res.json();
     })
-    .then((res) => {
-      location.href = "index.html";
-      console.log(res);
+    .then((data) => {
+      console.log(data);
     });
 });

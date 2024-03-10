@@ -21,7 +21,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       let editBtn = riga.querySelector(".edit");
       let infoBtn = riga.querySelector(".info");
 
-      imgUrl.innerText = prodotto.imgUrl; /// serve qualcosa d'altro
+      imgUrl.src = prodotto.imgUrl; /// serve qualcosa d'altro
       name.innerText = prodotto.name;
       brand.innerText = prodotto.brand;
       description.innerText = prodotto.description;
