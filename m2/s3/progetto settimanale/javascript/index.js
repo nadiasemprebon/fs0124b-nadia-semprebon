@@ -25,8 +25,8 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       brand.innerText = prodotto.brand;
       description.innerText = prodotto.description;
       price.innerText = prodotto.price;
-      editBtn.href = `edit.html?id=${prodotto.id}`; //.ID è GIUSTO? NON NE SONO SICURA
-      infoBtn.href = `edit.html?id=${prodotto.id}`; // .ID è GIUSTO?? NON NE SONO
+      editBtn.href = `edit.html?id=${prodotto._id}`; //.ID è GIUSTO? NON NE SONO SICURA
+      infoBtn.href = `edit.html?id=${prodotto._id}`; // .ID è GIUSTO?? NON NE SONO
     }
   });
 
@@ -37,17 +37,3 @@ function generaClone() {
 
   return clone;
 }
-
-//fetch per inserire immagine in cards
-fetch(
-  "https://images-na.ssl-images-amazon.com/images/I/81Na4DGpthL._AC_SL1500_.jpg"
-)
-  .then((response) => {
-    return response.blob();
-  })
-  .then((myBlob) => {
-    let objectURL = URL.createObjectURL(myBlob);
-    let image = document.createElement("img");
-    img.src = objectURL;
-    document.body.appendChild(image);
-  });
