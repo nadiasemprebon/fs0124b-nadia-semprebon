@@ -3,7 +3,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
   headers: {
     "Content-Type": "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVkZWE5MzdiMGFlMjAwMTljYTQ4YmQiLCJpYXQiOjE3MTAwOTA4OTksImV4cCI6MTcxMTMwMDQ5OX0.8FMufJ39GmhA3226S23A3N6S3kYgwUtE3_R7pnCYlh0",
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDc0NzJkN2IxMTAwMTkwZTZkZDUiLCJpYXQiOjE3MDk4ODkzNTIsImV4cCI6MTcxMTA5ODk1Mn0.ucxjVMkecAJlqDTpKVEicRDoZL3gcFcikqwWrUkwfYQ",
   },
 })
   .then((res) => res.json())
@@ -18,8 +18,8 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       let brand = riga.querySelector(".brand");
       let description = riga.querySelector(".description");
       let price = riga.querySelector(".price");
-      let editBtn = riga.querySelector(".edit");
-      let infoBtn = riga.querySelector(".info");
+      let editBtn = riga.querySelector(".editBtn");
+      let infoBtn = riga.querySelector(".infoBtn");
 
       imgUrl.src = prodotto.imgUrl; /// serve qualcosa d'altro
       name.innerText = prodotto.name;
