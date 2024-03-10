@@ -3,7 +3,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
   headers: {
     "Content-Type": "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDc0NzJkN2IxMTAwMTkwZTZkZDUiLCJpYXQiOjE3MDk4ODkzNTIsImV4cCI6MTcxMTA5ODk1Mn0.ucxjVMkecAJlqDTpKVEicRDoZL3gcFcikqwWrUkwfYQ",
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVkZWE5MzdiMGFlMjAwMTljYTQ4YmQiLCJpYXQiOjE3MTAwOTA4OTksImV4cCI6MTcxMTMwMDQ5OX0.8FMufJ39GmhA3226S23A3N6S3kYgwUtE3_R7pnCYlh0",
   },
 })
   .then((res) => res.json())

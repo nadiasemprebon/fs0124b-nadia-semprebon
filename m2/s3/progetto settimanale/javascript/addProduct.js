@@ -21,18 +21,13 @@ salva.addEventListener("click", function (e) {
 
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     method: "POST",
+    body: JSON.stringify(prodotto),
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDc0NzJkN2IxMTAwMTkwZTZkZDUiLCJpYXQiOjE3MDk4ODkzNTIsImV4cCI6MTcxMTA5ODk1Mn0.ucxjVMkecAJlqDTpKVEicRDoZL3gcFcikqwWrUkwfYQ",
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVkZWE5MzdiMGFlMjAwMTljYTQ4YmQiLCJpYXQiOjE3MTAwOTA4OTksImV4cCI6MTcxMTMwMDQ5OX0.8FMufJ39GmhA3226S23A3N6S3kYgwUtE3_R7pnCYlh0",
     },
-    body: JSON.stringify(prodotto),
   })
-    .then((res) => {
-      console.log(res);
-      res.json();
-    })
-    .then((data) => {
-      console.log(data);
-    });
+    .then((res) => res.json())
+    .then((res) => console.log(res));
 });
