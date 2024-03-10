@@ -38,3 +38,4 @@ function generaClone() {
 
   return clone;
 }
+generaClone();
