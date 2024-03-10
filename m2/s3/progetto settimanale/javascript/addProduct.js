@@ -19,10 +19,10 @@ salva.addEventListener("click", function (e) {
 
   console.log(prodotto);
 
-  fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
+  fetch("https://striveschool-api.herokuapp.com/api/product/", {
     method: "POST",
     headers: {
-      "Content-type": "application/json",
+      "Content-Type": "application/json",
       Authorization:
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDc0NzJkN2IxMTAwMTkwZTZkZDUiLCJpYXQiOjE3MDk4ODkzNTIsImV4cCI6MTcxMTA5ODk1Mn0.ucxjVMkecAJlqDTpKVEicRDoZL3gcFcikqwWrUkwfYQ",
     },
@@ -33,7 +33,7 @@ salva.addEventListener("click", function (e) {
       res.json();
     })
     .then((res) => {
-      //location.href = "read.html";
+      location.href = "index.html";
       console.log(res);
     });
 });

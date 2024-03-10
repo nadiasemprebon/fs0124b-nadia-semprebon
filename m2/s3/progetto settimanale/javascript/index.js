@@ -1,4 +1,5 @@
 fetch("https://striveschool-api.herokuapp.com/api/product/", {
+  method: "GET",
   headers: {
     "Content-Type": "application/json",
     Authorization:
@@ -26,7 +27,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       description.innerText = prodotto.description;
       price.innerText = prodotto.price;
       editBtn.href = `edit.html?id=${prodotto._id}`; //.ID è GIUSTO? NON NE SONO SICURA
-      infoBtn.href = `edit.html?id=${prodotto._id}`; // .ID è GIUSTO?? NON NE SONO
+      infoBtn.href = `info.html?id=${prodotto._id}`; // .ID è GIUSTO?? NON NE SONO
     }
   });
 
