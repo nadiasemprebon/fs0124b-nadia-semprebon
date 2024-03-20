@@ -1,0 +1,19 @@
+<table class="table">
+  <tr>
+    <th>title</th>
+    <th>body</th>
+    <th>userId</th>
+    <th>tags</th>
+    <th>active</th>
+  </tr>
+
+  <tr *ngFor="let books of booksArr; let id = index">
+    <td>{{ id + 1 }}</td>
+    <td>{{ books.title }}</td>
+    <td>{{ books.body }}</td>
+    <td>{{ books.userId }}</td>
+    <td>{{ books.tags }}</td>
+
+    <td [innerText]="books.active ? 'si' : 'no'"></td>
+  </tr>
+</table>
