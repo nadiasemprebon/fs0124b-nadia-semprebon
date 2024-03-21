@@ -12,8 +12,10 @@ export class AppComponent {
   booksArr: ibooks[] = [];
 
   ngOnInit() {
-    fetch('../assets/pizze.json')
+    fetch('../assets/db.json')
       .then((pippo) => pippo.json())
-      .then((pippo) => (this.booksArr = pippo.posts));
+      .then((pippo) => {
+        this.booksArr = pippo.posts;
+      });
   }
 }
