@@ -1,1 +1,11 @@
-<p>ford works!</p>
+<div
+  [ngClass]="{ 'bg-success': car.available, 'bg-danger': !car.available }"
+  class="card"
+  *ngFor="let car of fordCar"
+>
+  <img [src]="car.modelImage" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{ car.model }}</h5>
+    <p class="card-text">{{ car.brand }}</p>
+  </div>
+</div>
