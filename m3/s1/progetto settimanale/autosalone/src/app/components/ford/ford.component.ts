@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { AutoService } from '../../services/auto.service';
+import { iCar } from '../../models/car';
 
 @Component({
   selector: 'app-ford',
   templateUrl: './ford.component.html',
-  styleUrl: './ford.component.scss',
+  styleUrls: ['./ford.component.scss'],
 })
 export class FordComponent {
   fordCar: iCar[] = [];

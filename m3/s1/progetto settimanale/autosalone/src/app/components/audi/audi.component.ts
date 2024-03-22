@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { AutoService } from '../../services/auto.service'; // Aggiunto l'import del servizio
+import { iCar } from '../../models/car'; // Aggiunto l'import per iCar
 
 @Component({
   selector: 'app-audi',
   templateUrl: './audi.component.html',
-  styleUrl: './audi.component.scss',
+  styleUrls: ['./audi.component.scss'], // Corretto lo stile
 })
 export class AudiComponent {
   audiCar: iCar[] = [];
