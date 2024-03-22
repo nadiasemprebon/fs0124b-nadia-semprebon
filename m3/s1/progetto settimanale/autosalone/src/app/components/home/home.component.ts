@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { iCar } from '../../models/car';
+import { CarsService } from '../../cars.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent {
   car: iCar[] = [];
   showCar: iCar[] = [];
 
-  constructor(private carSvc: AutoService) {}
+  constructor(private carSvc: CarsService) {}
 
   ngOnInit() {
     this.carSvc.getAllCar().then((car) => {
@@ -22,7 +23,7 @@ export class HomeComponent {
   generateRandomCars(): void {
     for (let i = 0; i < 2; i++) {
       let index: number = Math.floor(Math.random() * this.car.length);
-      this.showCAr.push(this.car[index]);
+      this.showCar.push(this.car[index]);
     }
   }
 }

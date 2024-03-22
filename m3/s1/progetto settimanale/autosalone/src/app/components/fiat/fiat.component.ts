@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iCar } from '../../models/car';
+import { CarsService } from '../../cars.service';
 
 @Component({
   selector: 'app-fiat',
@@ -8,7 +10,7 @@ import { Component } from '@angular/core';
 export class FiatComponent {
   fiatCar: iCar[] = [];
 
-  constructor(private carSvc: AutoService) {}
+  constructor(private carSvc: CarsService) {}
 
   ngOnInit() {
     this.carSvc.getFiatCar().then((res) => (this.fiatCar = res));

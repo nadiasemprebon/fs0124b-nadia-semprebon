@@ -28,5 +28,23 @@
       />
     </div>
   </div>
-  <div class="d-flex justify-content-evenly"></div>
+  <div class="d-flex justify-content-evenly">
+    <div class="d-flex flex-wrap gap-5 justify-content-center">
+      <div
+        [ngClass]="{ 'bg-success': car.available, 'bg-danger': !car.available }"
+        class="card home-width"
+        *ngFor="let car of showCar"
+      >
+        <img [src]="car.modelImage" class="card-img-top img-car-home" />
+        <div class="card-body">
+          <h5 class="card-title text-white">{{ car.model }}</h5>
+          <a
+            routerLink="/{{ car.brand }}"
+            class="btn btn-outline-light card-text"
+            >{{ car.brand }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
