@@ -7,9 +7,10 @@ import { UserComponent } from './COMPONENTS/user/user.component';
 import { HomeComponent } from './COMPONENTS/home/home.component';
 
 import { FormsModule } from '@angular/forms';
+import { CompletedComponent } from './COMPONENTS/completed/completed.component';
 
 @NgModule({
-  declarations: [AppComponent, UserComponent, HomeComponent],
+  declarations: [AppComponent, UserComponent, HomeComponent, CompletedComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,23 +1,41 @@
 <div class="container my-5">
   <h1>Hey Boss! what's my task for the day?</h1>
-  <ul>
-    <li>
-      <a class="btn btn-primary me-2">See how much we've accomplished!</a>
-    </li>
-    <li>
-      <a class="btn btn-primary me-2">What's left?</a>
-    </li>
-    <li>
-      <a [routerLink]="['/users']" class="btn btn-primary me-2">By user</a>
-    </li>
-    <li><a [routerLink]="['/']" class="btn btn-primary">See all</a></li>
-  </ul>
-  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-    <input
-      type="search"
-      class="form-control"
-      placeholder="Search..."
-      aria-label="Search"
-    />
-  </form>
+
+  <a [routerLink]="['/completed']" class="btn btn-primary me-2"
+    >See how much we've accomplished!</a
+  >
+
+  <a [routerLink]="['/still_to_do']" class="btn btn-primary me-2"
+    >What's left?</a
+  >
+
+  <a [routerLink]="['/users']" class="btn btn-primary me-2">By user</a>
+
+  <a [routerLink]="['/']" class="btn btn-primary">See all</a>
+</div>
+<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+  <input
+    type="search"
+    class="form-control"
+    placeholder="enter your name"
+    aria-label="Search"
+  />
+</form>
+
+<div class="col-12">
+  <div
+    *ngFor="let todos of todoArr"
+    class="form-check"
+    [ngClass]="{
+      'alert-success': todos.completed,
+      'alert-danger': !todos.completed
+    }"
+  >
+    <input class="form-check-input" type="checkbox" />
+    <!--non ho avuto tempo di inserire l'[(ngModel)]-->
+    <label class="form-check-label" for="flexCheckDefault">
+      {{ todos.todo }}</label
+    >
+    <p>Assigned to:</p>
+  </div>
 </div>
