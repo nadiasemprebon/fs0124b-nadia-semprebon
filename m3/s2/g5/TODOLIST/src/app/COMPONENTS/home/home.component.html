@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div class="container my-5">
+  <h1>Hey Boss! what's my task for the day?</h1>
+  <ul>
+    <li>
+      <a class="btn btn-primary me-2">See how much we've accomplished!</a>
+    </li>
+    <li>
+      <a class="btn btn-primary me-2">What's left?</a>
+    </li>
+    <li>
+      <a [routerLink]="['/users']" class="btn btn-primary me-2">By user</a>
+    </li>
+    <li><a [routerLink]="['/']" class="btn btn-primary">See all</a></li>
+  </ul>
+  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+    <input
+      type="search"
+      class="form-control"
+      placeholder="Search..."
+      aria-label="Search"
+    />
+  </form>
+</div>
