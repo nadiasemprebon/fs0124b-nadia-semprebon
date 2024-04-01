@@ -31,8 +31,12 @@
       'alert-danger': !todos.completed
     }"
   >
-    <input class="form-check-input" type="checkbox" />
-    <!--non ho avuto tempo di inserire l'[(ngModel)]-->
+    <input
+      class="form-check-input"
+      type="checkbox"
+      [(ngModel)]="todos.completed"
+    />
+
     <label class="form-check-label" for="flexCheckDefault">
       {{ todos.todo }}</label
     >
