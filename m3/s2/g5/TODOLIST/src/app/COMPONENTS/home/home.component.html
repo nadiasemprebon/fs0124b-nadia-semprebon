@@ -27,6 +27,7 @@
     *ngFor="let todos of todoArr"
     class="form-check"
     [ngClass]="{
+      alert: true,
       'alert-success': todos.completed,
       'alert-danger': !todos.completed
     }"

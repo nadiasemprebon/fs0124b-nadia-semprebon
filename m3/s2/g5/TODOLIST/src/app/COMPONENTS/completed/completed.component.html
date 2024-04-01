@@ -1,1 +1,23 @@
-<p>completed works!</p>
+<div class="container">
+  <div class="row">
+    <p>completed</p>
+    <div
+      class="col"
+      *ngFor="let todos of todoArr"
+      [ngClass]="{
+        alert: true,
+        'alert-success': todos.completed,
+        'alert-danger': !todos.completed
+      }"
+    >
+      <input
+        type="checkbox"
+        class="form-check-input ms-2 p-3"
+        [(ngModel)]="todos.completed"
+      />
+      <label for="todo" class="form-check-label ms-2">{{ todos.todo }}</label>
+
+      ">
+    </div>
+  </div>
+</div>
