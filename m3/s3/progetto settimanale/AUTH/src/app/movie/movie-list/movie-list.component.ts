@@ -3,11 +3,11 @@ import { MoviesService } from '../movies.service';
 import { Imovies } from '../../modules/imovies';
 
 @Component({
-  selector: 'app-film',
-  templateUrl: './film.component.html',
-  styleUrl: './film.component.scss',
+  selector: 'app-movie-list',
+  templateUrl: './movie-list.component.html',
+  styleUrl: './movie-list.component.scss',
 })
-export class FilmComponent {
+export class MovieListComponent {
   movieArray: Imovies[] = [];
 
   constructor(private moviesService: MoviesService) {}

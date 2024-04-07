@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { Iuser } from '../modules/iuser';
-import { MoviesService } from '../movies/movies.service';
 import { Imovies } from '../modules/imovies';
+import { MoviesService } from '../movie/movies.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,6 +20,7 @@ export class DashboardComponent {
 
   ngOnInit() {
     this.getAllMovies();
+
     this.authSvc.user$.subscribe((user) => {
       this.user = user || undefined;
     });

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment.development';
+import { Imovies } from '../modules/imovies';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Imovies } from '../modules/imovies';
+import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
 
 @Injectable({
