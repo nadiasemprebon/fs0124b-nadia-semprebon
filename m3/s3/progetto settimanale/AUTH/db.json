@@ -1,40 +1,103 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "nadiasemprebon@gmail.com",
+      "password": "$2a$10$6QqzyGmkgQc75Sswp/w6KeF2l0BOlQXjicgJUolLMfnvxtclwVUNG",
+      "name": "nadia semprebon",
+      "id": 1
+    },
+    {
+      "email": "neithsemprebon@gmail.com",
+      "password": "$2a$10$3bDzRK/RuFfdHaVzioOKJekg0WPrep/tpOdOEo6feU7Y5byp9y8C.",
+      "name": "neith squeaky semprebon",
+      "id": 2
+    },
+    {
+      "email": "nunzio@giallo.com",
+      "password": "$2a$10$nMMBhIetBADQL28vs8YJEudU7lH5HZeYd65qfrcUNNO9FI9lAnQie",
+      "name": "nunzio giallo",
+      "id": 3
+    },
+    {
+      "email": "arie@cicci.com",
+      "password": "$2a$10$FNy1x4UCbQRdmyqV3i8Xh.JowVfQ2.cWl6tDiLajjLfb/gfLJ9PFe",
+      "name": "ariel",
+      "id": 4
+    },
+    {
+      "email": "adonay@sandoval.com",
+      "password": "$2a$10$1M4BXZgfUHiPNGgY8DJx/.gexSSmUhz5dloZCnGN4VFBfObAF3Ie6",
+      "name": "adonay",
+      "id": 5
+    },
+    {
+      "email": "nadia@semprebon.com",
+      "password": "$2a$10$/ge0H2b0eJNi1ziGPThAjewHBXFjK7eju48WJMzGOp9FCpzEA/Y7e",
+      "name": "nadia",
+      "id": 6
+    }
+  ],
   "movies": [
     {
-      "id": 1,
       "title": "Il Padrino",
       "description": "Il Padrino è un film del 1972 diretto da Francis Ford Coppola, tratto dal romanzo omonimo di Mario Puzo.",
       "genre": "Drammatico",
       "cover": "https://picsum.photos/200/300"
     },
     {
-      "id": 2,
       "title": "Forrest Gump",
       "description": "Forrest Gump è un film del 1994 diretto da Robert Zemeckis e interpretato da Tom Hanks.",
       "genre": "Drammatico",
       "cover": "https://picsum.photos/200/301"
     },
     {
-      "id": 3,
+      "title": "Pulp Fiction",
+      "description": "Pulp Fiction è un film del 1994 diretto da Quentin Tarantino.",
+      "genre": "Crimine",
+      "cover": "https://picsum.photos/200/308"
+    },
+
+    {
       "title": "Inception",
       "description": "Inception è un film del 2010 scritto e diretto da Christopher Nolan.",
       "genre": "Fantascienza",
       "cover": "https://picsum.photos/200/302"
     },
     {
-      "id": 4,
+      "title": "Titanic",
+      "description": "Titanic è un film del 1997 diretto da James Cameron e interpretato da Leonardo DiCaprio e Kate Winslet.",
+      "genre": "Drammatico",
+      "cover": "https://picsum.photos/200/309"
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "description": "The Shawshank Redemption è un film del 1994 diretto da Frank Darabont e interpretato da Tim Robbins e Morgan Freeman.",
+      "genre": "Drammatico",
+      "cover": "https://picsum.photos/200/310"
+    },
+    {
       "title": "La vita è bella",
       "description": "La vita è bella è un film del 1997 diretto e interpretato da Roberto Benigni.",
       "genre": "Commedia",
       "cover": "https://picsum.photos/200/303"
     },
     {
-      "id": 5,
       "title": "Interstellar",
       "description": "Interstellar è un film del 2014 diretto da Christopher Nolan.",
       "genre": "Fantascienza",
       "cover": "https://picsum.photos/200/304"
+    },
+    {
+      "title": "Il Gladiatore",
+      "description": "Il Gladiatore è un film del 2000 diretto da Ridley Scott e interpretato da Russell Crowe.",
+      "genre": "Azione",
+      "cover": "https://picsum.photos/200/306"
+    },
+    {
+      "title": "Schindler's List",
+      "description": "Schindler's List è un film del 1993 diretto da Steven Spielberg.",
+      "genre": "Drammatico",
+      "cover": "https://picsum.photos/200/307"
     }
   ]
 }

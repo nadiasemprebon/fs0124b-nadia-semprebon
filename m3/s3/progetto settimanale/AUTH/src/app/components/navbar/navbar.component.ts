@@ -19,6 +19,6 @@ export class NavbarComponent {
   }
 
   logout() {
-    //this.authSvc.logout();
+    this.authSvc.logout();
   }
 }
