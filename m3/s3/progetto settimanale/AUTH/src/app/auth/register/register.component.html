@@ -1,1 +1,38 @@
-<p>register works!</p>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputName" class="form-label">Nome</label>
+    <input
+      type="text"
+      name="nome"
+      [(ngModel)]="registerData.name"
+      class="form-control"
+      id="inputName"
+      placeholder="Nome"
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail" class="form-label">Email</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="registerData.email"
+      class="form-control"
+      id="inputEmail"
+      placeholder="Email"
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="registerData.password"
+      class="form-control"
+      id="inputPassword"
+      placeholder="Password"
+    />
+  </div>
+  <div class="col-12">
+    <button (click)="signUp()" class="btn btn-success">Registrati</button>
+  </div>
+</form>

@@ -1,3 +1,40 @@
 {
-  "users": []
+  "users": [],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Il Padrino",
+      "description": "Il Padrino è un film del 1972 diretto da Francis Ford Coppola, tratto dal romanzo omonimo di Mario Puzo.",
+      "genre": "Drammatico",
+      "cover": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 2,
+      "title": "Forrest Gump",
+      "description": "Forrest Gump è un film del 1994 diretto da Robert Zemeckis e interpretato da Tom Hanks.",
+      "genre": "Drammatico",
+      "cover": "https://picsum.photos/200/301"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "description": "Inception è un film del 2010 scritto e diretto da Christopher Nolan.",
+      "genre": "Fantascienza",
+      "cover": "https://picsum.photos/200/302"
+    },
+    {
+      "id": 4,
+      "title": "La vita è bella",
+      "description": "La vita è bella è un film del 1997 diretto e interpretato da Roberto Benigni.",
+      "genre": "Commedia",
+      "cover": "https://picsum.photos/200/303"
+    },
+    {
+      "id": 5,
+      "title": "Interstellar",
+      "description": "Interstellar è un film del 2014 diretto da Christopher Nolan.",
+      "genre": "Fantascienza",
+      "cover": "https://picsum.photos/200/304"
+    }
+  ]
 }
