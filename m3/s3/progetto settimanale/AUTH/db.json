@@ -35,6 +35,12 @@
       "password": "$2a$10$/ge0H2b0eJNi1ziGPThAjewHBXFjK7eju48WJMzGOp9FCpzEA/Y7e",
       "name": "nadia",
       "id": 6
+    },
+    {
+      "email": "alessandra@oliosi.com",
+      "password": "$2a$10$uNGOolME.eHKAwZi9.jYIux0XofHf7AKRu5FdR2.J4tV7VIIY9ex.",
+      "name": "alessandra",
+      "id": 7
     }
   ],
   "movies": [
@@ -56,7 +62,6 @@
       "genre": "Crimine",
       "cover": "https://picsum.photos/200/308"
     },
-
     {
       "title": "Inception",
       "description": "Inception è un film del 2010 scritto e diretto da Christopher Nolan.",
