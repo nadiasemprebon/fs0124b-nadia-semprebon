@@ -16,6 +16,11 @@ public class Main {
         video.alzaLuminosità();
         video.play();
 
+        Immagine img = new Immagine("titoloImmagine",10);
+
+        img.alzaLuminosita();
+        img.show();
+
 
 
     }

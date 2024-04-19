@@ -29,7 +29,9 @@ public abstract class ElementoMultimendiale {
         this.durata = durata;
     }
 
+    //metodo che riproducio Video e Registrazione Audio
         public abstract void play ();
+
     }
 
 

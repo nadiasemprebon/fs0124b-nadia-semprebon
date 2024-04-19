@@ -14,8 +14,8 @@ public class  Video extends ElementoMultimendiale {
         for (int i = 0; i < durata; i++) {
             String sequenzaPuntiEsclamativi = "!".repeat(volume);
             String sequenzaAsterischi = "*".repeat(luminosita);
-            System.out.println(titolo + " " + sequenzaPuntiEsclamativi);
-            System.out.println(titolo + " " + sequenzaAsterischi);
+            System.out.println(titolo + " " + sequenzaPuntiEsclamativi +sequenzaAsterischi);
+
         }
     }
 
@@ -37,10 +37,11 @@ public class  Video extends ElementoMultimendiale {
         luminosita++;
     }
     public void alzaabbassaLuminosità() {
-        //è inutile mettere la condizione if come sopra ma con (volume<0)?
-        luminosita--;
-    }
+        if (luminosita > 0) {
+            luminosita--;
+        }
 
+    }
 }
 
 
