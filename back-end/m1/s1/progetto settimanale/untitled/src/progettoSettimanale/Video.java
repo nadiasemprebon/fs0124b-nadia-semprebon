@@ -7,6 +7,6 @@ public class  Video extends ElementoMultimendiale {
     }
     @Override
     public void play() {
-        System.out.println("Riproduco l'immagine");
+        System.out.println("Riproduco" + titolo);
     }
 }

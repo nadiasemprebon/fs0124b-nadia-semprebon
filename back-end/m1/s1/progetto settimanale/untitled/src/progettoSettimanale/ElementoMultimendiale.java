@@ -14,7 +14,7 @@ public abstract class ElementoMultimendiale {
         this.durata = durata;
     }
 
-        /*metodo comune a tutte le classi*/
         public abstract void play ();
     }
-}
+
+
