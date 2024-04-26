@@ -1,6 +1,8 @@
 package it.epicode;
 
 public class Libro extends DocumentoCartaceo{
+
+
     private String autore;
     private String genere;
     public Libro(Long ISBN, String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {

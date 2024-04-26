@@ -1,4 +1,5 @@
 package it.epicode;
+// ho creato una classe genitore con gli attributi che hanno entrambe le classi figlie
 
 public abstract class DocumentoCartaceo {
     private Long ISBN;
@@ -6,8 +7,11 @@ public abstract class DocumentoCartaceo {
     private int annoPubblicazione;
     private int numeroPagine;
 
+//costruttore vuoto (non ho ancora capito perchè serve ma serve)
     public DocumentoCartaceo(){};
 
+// creo getter/setter per aver la possibilità di utilizzare gli attributi della
+// classe genitore al di fuori della stessa
 
     public Long getISBN() {
         return ISBN;
