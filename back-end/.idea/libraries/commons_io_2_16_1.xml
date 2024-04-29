@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="commons-io-2.16.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../libreria java/commons-io-2.16.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../libreria java/logback-classic-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../libreria java/logback-core-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../libreria java/slf4j-api-2.0.13.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/m1/s1/g1/primo lavoro/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g2/esercizio n 3/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g2/secondo esercizio/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g3/rettangolo3/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g3/rettangolo/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g4/esercizio azienda 2/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/g4/esercizio azienda/src" />
+      <root url="file://$PROJECT_DIR$/m1/s1/progetto settimanale/untitled/src" />
+      <root url="file://$PROJECT_DIR$/m1/s2/g2/esercizio m1-s2-g2/src" />
+      <root url="file://$PROJECT_DIR$/m1/s2/g5/src" />
+    </SOURCES>
+  </library>
+</component>
