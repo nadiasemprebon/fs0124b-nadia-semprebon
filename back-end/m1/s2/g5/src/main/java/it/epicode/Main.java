@@ -10,10 +10,10 @@ public class Main {
         var archivio = new ArrayList<DocumentoCartaceo>();
 
         //inizializzo il libro
-        archivio.add(new Libro(1234567L, "Atleta Vincente", 2023, 320, "Binelli",
+        archivio.add(new Libro(1234567L, "'Atleta Vincente'", 2023, 320, "'Massimo Binelli'",
                 "crescita personale"));
         //inizializzo la rivista
-        archivio.add(new Rivista(134567L, "Coltiva la tua serra", 2024, 100, Periodicita.SEMESTRALE ));
+        archivio.add(new Rivista(134567L, "'Coltiva la tua serra'", 2024, 100, Periodicita.SEMESTRALE ));
 
         //creo variabile ISBNToSearch
 
