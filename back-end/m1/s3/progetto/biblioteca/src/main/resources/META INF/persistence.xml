@@ -6,7 +6,7 @@
     <persistence-unit name="JPA_Sample">
         <properties>
 
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneeventi" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bibliotecaComunale" />
             <property name="jakarta.persistence.jdbc.user" value="postgres" />
             <property name="jakarta.persistence.jdbc.password" value="postgresql" />
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
