@@ -15,9 +15,7 @@ public class Book extends LibraryItem {
     @Column(length = 20, nullable = false)
     private String kind;
 
-    public Book() {
-
-    }
+    public Book() {}
 
     public Book(String isbn, String title, int publicationYear, int pages, String author, String kind) {
         super(isbn, title, publicationYear, pages);

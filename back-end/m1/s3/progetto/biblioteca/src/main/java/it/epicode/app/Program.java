@@ -7,3 +7,8 @@ public class Program {
         Application.run(new IsbValidatorImpl());
     }
 }
+
+
+// Purtroppo a causa di impegni inderogabili questo weekend non sono riuscita a dedicare il tempo che il progetto avrebbe meritato
+// spero di rimediare con la prossima settimana il nuovo argomento.
+//Grazie :)
