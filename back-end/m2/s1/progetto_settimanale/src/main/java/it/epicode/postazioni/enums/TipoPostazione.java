@@ -1,4 +1,4 @@
-package it.epicode.postazioni.entity;
+package it.epicode.postazioni.enums;
 
 public enum TipoPostazione {
     PRIVATO,

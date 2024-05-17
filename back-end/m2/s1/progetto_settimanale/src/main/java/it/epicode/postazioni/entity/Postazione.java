@@ -1,5 +1,6 @@
 package it.epicode.postazioni.entity;
 
+import it.epicode.postazioni.enums.TipoPostazione;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
