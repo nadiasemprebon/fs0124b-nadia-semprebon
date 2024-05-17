@@ -11,10 +11,16 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 //serve per scrivere le db.Quando ti ho chiamto funzionava e ora non funziona di nuovo
 
 @Component
 public class PostazioniRunner implements CommandLineRunner {
+
+    //tentativo di far funzionare il db nuovamente
+    private static final Logger logger = LoggerFactory.getLogger(PostazioniRunner.class);
 
     //iniezione delle dipendenze
 
@@ -71,7 +77,7 @@ public class PostazioniRunner implements CommandLineRunner {
 
         // Recupero tutte le postazioni per visualizzarle
         List<Postazione> postazioni = postazioneService.getAll();
-        postazioni.forEach(System.out::println);
+        postazioni.forEach(postazione -> logger.info(postazione.toString()));
 
     }
 }
