@@ -14,9 +14,11 @@ public class EdificioService {
 
 
 
-    public List<Edificio> getAll(){ return edificioRepository.findAll(); }
+    public List<Edificio> getAll(){ return edificioRepository.findAll();
+    }
 
-    public Edificio findById(long id){ return edificioRepository.findById(id).orElseThrow(() ->new NotFoundException(id));}
+    public Edificio findById(long id){ return edificioRepository.findById(id).orElseThrow(() ->new NotFoundException(id));
+    }
 
     public void save(Edificio edificio) { edificioRepository.save(edificio); }
 

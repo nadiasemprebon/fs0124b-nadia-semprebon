@@ -20,14 +20,15 @@ public class PostazioneService {
 
     public void save(Postazione postazione) { postazioneRepository.save(postazione); }
 
+    public Postazione saveAndReturn(Postazione postazione) {
+        return postazioneRepository.save(postazione);
+    }
+
     public void findByIdAndDelete(long id) {
         Postazione postazione = this.findById(id);
         postazioneRepository.delete(postazione);
     }
 
-    public List<Postazione> getAvailablePostazioniByTipoAndCitta(TipoPostazione tipo, String citta) {
-        return postazioneRepository.findAvailableByTipoAndCitta(tipo, citta);
-    }
 
 }
 

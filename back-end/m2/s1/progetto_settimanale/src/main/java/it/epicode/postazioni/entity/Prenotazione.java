@@ -18,9 +18,10 @@ import java.time.LocalDate;
 
 
 public class Prenotazione extends BaseEntity {
-    @ManyToOne
+	@ManyToOne
 	private Utente utente;
 	@ManyToOne
 	private Postazione postazione;
 	private LocalDate dataPrenotazione;
+
 }

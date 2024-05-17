@@ -1,5 +1,8 @@
 package it.epicode.postazioni.entity;
-
+import it.epicode.postazioni.entity.Edificio;
+import it.epicode.postazioni.entity.Postazione;
+import it.epicode.postazioni.entity.Prenotazione;
+import it.epicode.postazioni.entity.Utente;
 import it.epicode.postazioni.service.EdificioService;
 import it.epicode.postazioni.service.PostazioneService;
 import it.epicode.postazioni.service.PrenotazioneService;
@@ -9,18 +12,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.time.LocalDate;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 //serve per scrivere le db.Quando ti ho chiamto funzionava e ora non funziona di nuovo
 
 @Component
 public class PostazioniRunner implements CommandLineRunner {
 
-    //tentativo di far funzionare il db nuovamente
-    private static final Logger logger = LoggerFactory.getLogger(PostazioniRunner.class);
 
     //iniezione delle dipendenze
 
@@ -66,18 +65,34 @@ public class PostazioniRunner implements CommandLineRunner {
         edificioService.save(edificio3);
 
 
-        postazioneService.save(postazione1);
-        postazioneService.save(postazione2);
-        postazioneService.save(postazione3);
-
-// Utilizzo del metodo findByIdAndDelete
-        long idToDelete = postazione1.getId(); // Id della postazione da eliminare
-        postazioneService.findByIdAndDelete(idToDelete);
+        postazione1 = postazioneService.saveAndReturn(postazione1);
+        postazione2 = postazioneService.saveAndReturn(postazione2);
+        postazione3 = postazioneService.saveAndReturn(postazione3);
 
 
-        // Recupero tutte le postazioni per visualizzarle
-        List<Postazione> postazioni = postazioneService.getAll();
-        postazioni.forEach(postazione -> logger.info(postazione.toString()));
+        Prenotazione prenotazione1 = Prenotazione.builder()
+                .withUtente(utente1)
+                .withPostazione(postazione1)
+                .withDataPrenotazione(LocalDate.now().plusDays(1))
+                .build();
+        Prenotazione prenotazione2 = Prenotazione.builder()
+                .withUtente(utente2)
+                .withPostazione(postazione2)
+                .withDataPrenotazione(LocalDate.now().plusDays(2))
+                .build();
+
+        Prenotazione prenotazione3 = Prenotazione.builder()
+                .withUtente(utente3)
+                .withPostazione(postazione3)
+                .withDataPrenotazione(LocalDate.now().plusDays(3))
+                .build();
+        try {
+            prenotazioneService.creaPrenotazione(prenotazione1);
+            prenotazioneService.creaPrenotazione(prenotazione2);
+            prenotazioneService.creaPrenotazione(prenotazione3);
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 }

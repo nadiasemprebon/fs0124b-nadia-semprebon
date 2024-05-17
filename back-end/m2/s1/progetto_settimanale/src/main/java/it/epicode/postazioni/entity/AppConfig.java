@@ -4,7 +4,7 @@ import it.epicode.postazioni.enums.TipoPostazione;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.List;
+
 
 @Configuration
 public class AppConfig {
@@ -47,17 +47,17 @@ public class AppConfig {
 
     @Bean(name = "postazione1")
     public Postazione postazione1Bean() {
-        return new Postazione("La Libertà", TipoPostazione.PRIVATO, 150, edificio1Bean(), true);
+        return new Postazione("Spazio riservato" , TipoPostazione.PRIVATO, 150, edificio1Bean());
     }
 
     @Bean(name = "postazione2")
     public Postazione postazione2Bean() {
-        return new Postazione("I diritti Umani", TipoPostazione.OPENSPACE, 70, edificio2Bean(), false);
+        return new Postazione("Grandi conferenze", TipoPostazione.OPENSPACE, 70, edificio2Bean());
     }
 
     @Bean(name = "postazione3")
     public Postazione postazione3Bean() {
-        return new Postazione("La Primavera del Libro", TipoPostazione.SALA_RIUNIONI, 200, edificio3Bean(), true);
+        return new Postazione("Piccoli e grandi eventi", TipoPostazione.SALA_RIUNIONI, 200, edificio3Bean());
     }
 
 }
