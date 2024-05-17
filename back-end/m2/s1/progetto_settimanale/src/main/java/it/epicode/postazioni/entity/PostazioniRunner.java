@@ -9,7 +9,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-//serve per scrivere le db, senza non funziona
+import java.util.List;
+
+//serve per scrivere le db.Quando ti ho chiamto funzionava e ora non funziona di nuovo
 
 @Component
 public class PostazioniRunner implements CommandLineRunner {
@@ -62,8 +64,14 @@ public class PostazioniRunner implements CommandLineRunner {
         postazioneService.save(postazione2);
         postazioneService.save(postazione3);
 
+// Utilizzo del metodo findByIdAndDelete
+        long idToDelete = postazione1.getId(); // Id della postazione da eliminare
+        postazioneService.findByIdAndDelete(idToDelete);
 
 
+        // Recupero tutte le postazioni per visualizzarle
+        List<Postazione> postazioni = postazioneService.getAll();
+        postazioni.forEach(System.out::println);
 
     }
 }

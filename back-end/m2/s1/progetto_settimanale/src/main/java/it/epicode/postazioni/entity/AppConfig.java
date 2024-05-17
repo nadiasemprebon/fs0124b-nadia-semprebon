@@ -44,6 +44,22 @@ public class AppConfig {
     public Edificio edificio3Bean() {
         return new Edificio("Sala Comunale", "piazza Risorgimento 1", "MI");
     }
+
+    @Bean(name = "postazione1")
+    public Postazione postazione1Bean() {
+        return new Postazione("La Libertà", TipoPostazione.PRIVATO, 150, edificio1Bean(), true);
+    }
+
+    @Bean(name = "postazione2")
+    public Postazione postazione2Bean() {
+        return new Postazione("I diritti Umani", TipoPostazione.OPENSPACE, 70, edificio2Bean(), false);
+    }
+
+    @Bean(name = "postazione3")
+    public Postazione postazione3Bean() {
+        return new Postazione("La Primavera del Libro", TipoPostazione.SALA_RIUNIONI, 200, edificio3Bean(), true);
+    }
+
 }
 
 

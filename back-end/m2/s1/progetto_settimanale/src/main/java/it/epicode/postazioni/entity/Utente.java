@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+//commento come per tutte le altre classi
 @Data
 @Entity
 @AllArgsConstructor

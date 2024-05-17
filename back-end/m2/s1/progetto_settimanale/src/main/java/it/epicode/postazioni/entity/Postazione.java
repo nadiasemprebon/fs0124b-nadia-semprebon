@@ -1,17 +1,13 @@
 package it.epicode.postazioni.entity;
 
 import it.epicode.postazioni.enums.TipoPostazione;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
+//commento come per le altre classi
 
-
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 @AllArgsConstructor
@@ -20,12 +16,14 @@ import java.util.List;
 
 public class Postazione extends BaseEntity {
     private String descrizione;
+    @Enumerated(EnumType.STRING)
         private TipoPostazione tipo;
         private int numMaxOccupanti;
         @ManyToOne
         private Edificio edificio;
         private boolean libero;
-        @OneToMany(mappedBy = "postazione")
+        @OneToMany(mappedBy = "postazione", fetch = FetchType.EAGER) // Modificato fetch type a EAGER per provare a risolvere il problema che non scrive piu ne db
+
         private List<Prenotazione>prenotazioni;
 
         public Postazione(String descrizione, TipoPostazione tipo, int numMaxOccupanti, Edificio edificio, boolean libero){
