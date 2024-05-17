@@ -1,11 +1,12 @@
 package it.epicode.postazioni.service;
 
 import it.epicode.postazioni.entity.Utente;
+import it.epicode.postazioni.exceptions.NotFoundException;
 import it.epicode.postazioni.repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
+
 
 @Service
 public class UtenteService {

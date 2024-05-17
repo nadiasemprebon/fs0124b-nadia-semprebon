@@ -22,4 +22,13 @@ public class Utente extends BaseEntity {
     private String email;
     @OneToMany(mappedBy = "utente")
     private List<Prenotazione> prenotazioni;
+
+    public Utente(String username, String nome, String cognome, String email){
+        this.username = username;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.email =email;
+    }
+
 }
+
