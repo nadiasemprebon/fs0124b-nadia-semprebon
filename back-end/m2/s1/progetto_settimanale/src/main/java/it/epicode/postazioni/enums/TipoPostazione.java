@@ -2,6 +2,6 @@ package it.epicode.postazioni.enums;
 
 public enum TipoPostazione {
     PRIVATO,
-    OPENSRACE,
+    OPENSPACE,
     SALA_RIUNIONI
 }
