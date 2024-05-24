@@ -1,4 +1,4 @@
-package epicode.u5d8hw.exceptions;
+package exceptions;
 
 public class BadRequestException extends RuntimeException {
 

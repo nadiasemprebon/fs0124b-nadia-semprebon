@@ -1,5 +1,6 @@
 package entities;
 
+import enums.StatoDispositivo;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -21,7 +22,7 @@ public class Dispositivo {
     private String tipologia;
 
     @Enumerated(EnumType.STRING)
-    private Dispositivo status;
+    private StatoDispositivo status;
 
     @ManyToOne
     private Dipendente dipendente;

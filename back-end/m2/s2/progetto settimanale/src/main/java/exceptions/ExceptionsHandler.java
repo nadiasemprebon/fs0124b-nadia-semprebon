@@ -1,4 +1,4 @@
-package epicode.u5d8hw.exceptions;
+package exceptions;
 
 import java.time.LocalDateTime;
 import java.util.Date;
