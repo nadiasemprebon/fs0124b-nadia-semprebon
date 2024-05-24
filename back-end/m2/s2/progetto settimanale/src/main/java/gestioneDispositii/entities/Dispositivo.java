@@ -1,6 +1,6 @@
-package entities;
+package gestioneDispositii.entities;
 
-import enums.StatoDispositivo;
+import gestioneDispositii.enums.StatoDispositivo;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

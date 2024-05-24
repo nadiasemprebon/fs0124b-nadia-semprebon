@@ -1,16 +1,14 @@
-package services;
+package gestioneDispositii.services;
 
-import entities.Dispositivo;
-import enums.StatoDispositivo;
-import exceptions.NotFoundException;
-import jakarta.persistence.Id;
+import gestioneDispositii.entities.Dispositivo;
+import gestioneDispositii.enums.StatoDispositivo;
+import gestioneDispositii.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import repositories.DispositivoRepository;
+import gestioneDispositii.repositories.DispositivoRepository;
 
 
 public class DispositivoService {

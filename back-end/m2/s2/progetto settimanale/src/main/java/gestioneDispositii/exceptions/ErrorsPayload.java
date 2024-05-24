@@ -1,4 +1,4 @@
-package exceptions;
+package gestioneDispositii.exceptions;
 
 import java.time.LocalDateTime;
 import java.util.Date;

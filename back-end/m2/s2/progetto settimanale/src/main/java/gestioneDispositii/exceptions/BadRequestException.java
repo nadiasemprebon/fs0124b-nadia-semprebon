@@ -1,4 +1,4 @@
-package exceptions;
+package gestioneDispositii.exceptions;
 
 public class BadRequestException extends RuntimeException {
 

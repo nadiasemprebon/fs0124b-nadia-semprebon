@@ -1,4 +1,4 @@
-package enums;
+package gestioneDispositii.enums;
 
 public enum StatoDispositivo {
     DISPONIBILE,

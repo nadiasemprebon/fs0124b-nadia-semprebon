@@ -1,4 +1,4 @@
-package com.example.GestioneDispositii;
+package gestioneDispositii;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

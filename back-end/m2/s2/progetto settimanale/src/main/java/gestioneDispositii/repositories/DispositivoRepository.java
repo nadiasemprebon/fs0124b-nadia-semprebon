@@ -1,6 +1,6 @@
-package repositories;
+package gestioneDispositii.repositories;
 
-import entities.Dispositivo;
+import gestioneDispositii.entities.Dispositivo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DispositivoRepository extends JpaRepository<Dispositivo,Long> {

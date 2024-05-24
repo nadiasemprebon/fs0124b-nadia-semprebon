@@ -1,4 +1,4 @@
-package com.example.GestioneDispositii;
+package gestioneDispositii;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,16 +1,13 @@
-package services;
+package gestioneDispositii.services;
 
-import entities.Dipendente;
-import entities.Dispositivo;
-import enums.StatoDispositivo;
-import exceptions.NotFoundException;
+import gestioneDispositii.entities.Dipendente;
+import gestioneDispositii.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import repositories.DipendeteRepository;
-import repositories.DispositivoRepository;
+import gestioneDispositii.repositories.DipendeteRepository;
 
 public class DipendenteService {
     @Autowired
