@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = false, onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "users")
+@Table(name = "utenti")
 @Builder(setterPrefix = "with")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,7 +24,7 @@ public class Utente extends BaseEntity{
     private String username;
     private String email;
     private String password;
-    @OneToMany(mappedBy = "evento")
+    @OneToMany(mappedBy = "utente")
     private List<Prenotazione> prenotazioni;
 
 
